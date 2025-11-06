@@ -5,14 +5,13 @@
  */
 package com.anaptecs.jeaf.tools.test.api;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import com.anaptecs.jeaf.tools.api.string.StringTools;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
-import com.anaptecs.jeaf.tools.api.string.StringTools;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ToolsTest {

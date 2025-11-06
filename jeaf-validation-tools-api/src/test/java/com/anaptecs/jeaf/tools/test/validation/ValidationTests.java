@@ -5,9 +5,9 @@
  */
 package com.anaptecs.jeaf.tools.test.validation;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,13 +16,12 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Path;
 import javax.validation.metadata.ConstraintDescriptor;
 
+import com.anaptecs.jeaf.tools.api.validation.Severity;
+import com.anaptecs.jeaf.tools.api.validation.ValidationResult;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
-import com.anaptecs.jeaf.tools.api.validation.Severity;
-import com.anaptecs.jeaf.tools.api.validation.ValidationResult;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ValidationTests {
@@ -116,7 +115,7 @@ class MyConstraintViolation<T> implements ConstraintViolation<T> {
   }
 
   @Override
-  public <U> U unwrap( Class<U> pType ) {
+  public <U> U unwrap(Class<U> pType) {
     return null;
   }
 

@@ -5,18 +5,17 @@
  */
 package com.anaptecs.jeaf.tools.test.performance;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
+import com.anaptecs.jeaf.tools.api.performance.StopwatchResult;
+import com.anaptecs.jeaf.tools.api.performance.TimePrecision;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
-import com.anaptecs.jeaf.tools.api.performance.StopwatchResult;
-import com.anaptecs.jeaf.tools.api.performance.TimePrecision;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class StopwatchTests {

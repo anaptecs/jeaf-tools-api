@@ -5,15 +5,14 @@
  */
 package com.anaptecs.jeaf.tools.test.pooling;
 
-import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.anaptecs.jeaf.tools.api.pooling.Pool;
 import com.anaptecs.jeaf.tools.api.pooling.PooledObject;
 import com.anaptecs.jeaf.tools.api.pooling.PoolingTools;
 import com.anaptecs.jeaf.tools.test.tools.impl.PoolingToolsImpl;
+import org.junit.jupiter.api.Test;
 
 public class PoolingAPITest {
   @Test

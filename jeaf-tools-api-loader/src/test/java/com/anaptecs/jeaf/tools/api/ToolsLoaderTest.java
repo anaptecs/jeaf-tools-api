@@ -5,14 +5,13 @@
  */
 package com.anaptecs.jeaf.tools.api;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import com.anaptecs.jeaf.xfun.api.XFun;
 import com.anaptecs.jeaf.xfun.api.trace.TraceLevel;
+import org.junit.jupiter.api.Test;
 
 public class ToolsLoaderTest {
   @Test

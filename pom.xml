@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.anaptecs.jeaf</groupId>
 		<artifactId>jeaf-module-project-parent</artifactId>
-		<version>1.8.0</version>
+		<version>1.9.0</version>
 	</parent>
 
 	<groupId>com.anaptecs.jeaf.tools</groupId>
@@ -29,6 +29,14 @@
 		<jeaf.x-fun.test-runtime.version>1.8.0</jeaf.x-fun.test-runtime.version>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-suite-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
 	<modules>
 		<module>jeaf-tools-api-loader</module>
 		<module>jeaf-auto-boxing-tools-api</module>

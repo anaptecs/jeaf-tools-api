@@ -5,16 +5,15 @@
  */
 package com.anaptecs.jeaf.tools.test.xml;
 
-import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
+import com.anaptecs.jeaf.tools.api.xml.DocumentProperties;
+import com.anaptecs.jeaf.tools.api.xml.DocumentProperties.Builder;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
-import com.anaptecs.jeaf.tools.api.xml.DocumentProperties;
-import com.anaptecs.jeaf.tools.api.xml.DocumentProperties.Builder;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class XMLTests {

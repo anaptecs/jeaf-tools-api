@@ -5,28 +5,26 @@
  */
 package com.anaptecs.jeaf.tools.test.web;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.IOException;
 
+import com.anaptecs.jeaf.tools.api.ToolsMessages;
+import com.anaptecs.jeaf.tools.api.http.HTTPStatusCode;
+import com.anaptecs.jeaf.tools.api.http.HTTPStatusCode.Category;
+import com.anaptecs.jeaf.tools.api.http.QueryParameter;
+import com.anaptecs.jeaf.tools.api.http.URLDetails;
+import com.anaptecs.jeaf.tools.api.http.XFrameOptions;
+import com.anaptecs.jeaf.xfun.api.errorhandling.JEAFSystemException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
-import com.anaptecs.jeaf.tools.api.ToolsMessages;
-import com.anaptecs.jeaf.tools.api.http.QueryParameter;
-import com.anaptecs.jeaf.tools.api.http.HTTPStatusCode;
-import com.anaptecs.jeaf.tools.api.http.HTTPStatusCode.Category;
-import com.anaptecs.jeaf.tools.api.http.URLDetails;
-import com.anaptecs.jeaf.tools.api.http.XFrameOptions;
-import com.anaptecs.jeaf.xfun.api.errorhandling.JEAFSystemException;
-
-import junit.framework.TestCase;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class WebToolsTests {
@@ -66,57 +64,57 @@ public class WebToolsTests {
     URLDetails lURLDetails = new URLDetails(lURLString);
 
     // Check standard info
-    TestCase.assertEquals("Wrong protocol", "https", lURLDetails.getProtocol());
-    TestCase.assertEquals("Wrong host", "FFC-powerpoint.officeapps.live.com", lURLDetails.getHost());
-    TestCase.assertEquals("Wrong port", 443, lURLDetails.getPort());
-    TestCase.assertEquals("Wrong path", "/p/PowerPointFrame.aspx", lURLDetails.getPath());
-    TestCase.assertEquals("Wrong query",
+    assertEquals("https", lURLDetails.getProtocol(), "Wrong protocol");
+    assertEquals("FFC-powerpoint.officeapps.live.com", lURLDetails.getHost(), "Wrong host");
+    assertEquals(443, lURLDetails.getPort(), "Wrong port");
+    assertEquals("/p/PowerPointFrame.aspx", lURLDetails.getPath(), "Wrong path");
+    assertEquals(
         "WOPISrc=http%3A%2F%2Flocalhost%3A8080%2Fweeasy%2F1.3%2Fdesktop%2Fwopi%2Ffiles%2F1-----B-----N5-&New=1&rs=de-DE&ui=de-DE&IsLicensedUser=0&PowerPointView=EditView",
-        lURLDetails.getQuery());
-    TestCase.assertEquals("Wrong URL", lURLString, lURLDetails.getURLAsString());
-    TestCase.assertNotNull("URL object not returned", lURLDetails.getURL());
+        lURLDetails.getQuery(), "Wrong query");
+    assertEquals(lURLString, lURLDetails.getURLAsString(), "Wrong URL");
+    assertNotNull(lURLDetails.getURL(), "URL object not returned");
 
     // Check URL parameters.
-    TestCase.assertEquals("Wrong number of parameters", 6, lURLDetails.getQueryParameters().size());
+    assertEquals(6, lURLDetails.getQueryParameters().size(), "Wrong number of parameters");
 
     QueryParameter lQueryParameter = lURLDetails.getQueryParameter("WOPISrc");
-    TestCase.assertEquals("Wrong parameter name", "WOPISrc", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value",
+    assertEquals("WOPISrc", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals(
         "http%3A%2F%2Flocalhost%3A8080%2Fweeasy%2F1.3%2Fdesktop%2Fwopi%2Ffiles%2F1-----B-----N5-",
-        lQueryParameter.getValue());
+        lQueryParameter.getValue(), "Wrong parameter value");
 
     lQueryParameter = lURLDetails.getQueryParameter("New");
-    TestCase.assertEquals("Wrong parameter name", "New", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value", "1", lQueryParameter.getValue());
+    assertEquals("New", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals("1", lQueryParameter.getValue(), "Wrong parameter value");
 
     lQueryParameter = lURLDetails.getQueryParameter("rs");
-    TestCase.assertEquals("Wrong parameter name", "rs", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value", "de-DE", lQueryParameter.getValue());
+    assertEquals("rs", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals("de-DE", lQueryParameter.getValue(), "Wrong parameter value");
 
     lQueryParameter = lURLDetails.getQueryParameter("IsLicensedUser");
-    TestCase.assertEquals("Wrong parameter name", "IsLicensedUser", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value", "0", lQueryParameter.getValue());
+    assertEquals("IsLicensedUser", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals("0", lQueryParameter.getValue(), "Wrong parameter value");
 
     lQueryParameter = lURLDetails.getQueryParameter("PowerPointView");
-    TestCase.assertEquals("Wrong parameter name", "PowerPointView", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value", "EditView", lQueryParameter.getValue());
+    assertEquals("PowerPointView", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals("EditView", lQueryParameter.getValue(), "Wrong parameter value");
 
     lQueryParameter = lURLDetails.getQueryParameter("ui");
-    TestCase.assertEquals("Wrong parameter name", "ui", lQueryParameter.getName());
-    TestCase.assertEquals("Wrong parameter value", "de-DE", lQueryParameter.getValue());
-    TestCase.assertTrue(lURLDetails.hasQueryParameter("ui"));
-    TestCase.assertFalse(lURLDetails.hasQueryParameter("uiX"));
+    assertEquals("ui", lQueryParameter.getName(), "Wrong parameter name");
+    assertEquals("de-DE", lQueryParameter.getValue(), "Wrong parameter value");
+    assertTrue(lURLDetails.hasQueryParameter("ui"));
+    assertFalse(lURLDetails.hasQueryParameter("uiX"));
 
     lURLDetails = new URLDetails("https://example.org/?a=1&b=2&c&d=4");
-    TestCase.assertEquals(lURLDetails.getQueryParameter("a").getValue(), "1");
-    TestCase.assertEquals(lURLDetails.getQueryParameter("b").getValue(), "2");
-    TestCase.assertNull(lURLDetails.getQueryParameter("c").getValue());
-    TestCase.assertEquals(lURLDetails.getQueryParameter("d").getValue(), "4");
+    assertEquals(lURLDetails.getQueryParameter("a").getValue(), "1");
+    assertEquals(lURLDetails.getQueryParameter("b").getValue(), "2");
+    assertNull(lURLDetails.getQueryParameter("c").getValue());
+    assertEquals(lURLDetails.getQueryParameter("d").getValue(), "4");
 
     // Check creation of URLs with invalid URLs
     try {
       new URLDetails("Invalid URL");
-      TestCase.fail("Expecting exception");
+      fail("Expecting exception");
     }
     catch (IOException e) {
       // Nothing to do. Exception is expected to happen.

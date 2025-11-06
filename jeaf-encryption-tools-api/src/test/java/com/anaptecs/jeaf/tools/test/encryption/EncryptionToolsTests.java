@@ -5,28 +5,27 @@
  */
 package com.anaptecs.jeaf.tools.test.encryption;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 import javax.crypto.SecretKey;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-
 import com.anaptecs.jeaf.tools.api.encryption.AESEncrypted;
 import com.anaptecs.jeaf.tools.api.encryption.AESKeyLength;
 import com.anaptecs.jeaf.tools.api.encryption.AESSecretKey;
 import com.anaptecs.jeaf.tools.api.encryption.EncryptionTools;
 import com.anaptecs.jeaf.xfun.api.errorhandling.JEAFSystemException;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class EncryptionToolsTests {

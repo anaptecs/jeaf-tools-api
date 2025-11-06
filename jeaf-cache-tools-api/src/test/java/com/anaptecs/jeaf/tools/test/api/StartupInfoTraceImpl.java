@@ -5,7 +5,7 @@
  */
 package com.anaptecs.jeaf.tools.test.api;
 
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,12 +23,12 @@ public class StartupInfoTraceImpl implements Trace {
   public List<TraceLevel> traceLevels = new ArrayList<>();
 
   @Override
-  public void newContextStack( ContextStackElement pContextStackElement ) {
+  public void newContextStack(ContextStackElement pContextStackElement) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void pushContextStackElement( ContextStackElement pContextStackElement ) {
+  public void pushContextStackElement(ContextStackElement pContextStackElement) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -39,17 +39,17 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void writeEmergencyTrace( String pMessage, Throwable pThrowable ) {
+  public void writeEmergencyTrace(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void writeEmergencyTrace( String pMessage, Throwable pThrowable, TraceLevel pTraceLevel ) {
+  public void writeEmergencyTrace(String pMessage, Throwable pThrowable, TraceLevel pTraceLevel) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void writeInitInfo( String pMessage, TraceLevel pTraceLevel ) {
+  public void writeInitInfo(String pMessage, TraceLevel pTraceLevel) {
     messages.add(pMessage);
     traceLevels.add(pTraceLevel);
   }
@@ -61,67 +61,67 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void trace( String pMessage ) {
+  public void trace(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void traceObject( Object pObject ) {
+  public void traceObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( Throwable pThrowable ) {
+  public void trace(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( Throwable pThrowable, boolean pSuppressStacktrace ) {
+  public void trace(Throwable pThrowable, boolean pSuppressStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( String pMessage, Throwable pThrowable ) {
+  public void trace(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, String... pMessageParameters ) {
+  public void trace(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, Object... pMessageParameters ) {
+  public void trace(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void trace(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void trace(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void trace(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void trace(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void trace(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void trace( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void trace(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -132,67 +132,67 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void debug( String pMessage ) {
+  public void debug(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debugObject( Object pObject ) {
+  public void debugObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( Throwable pThrowable ) {
+  public void debug(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( Throwable pThrowable, boolean pNoStacktrace ) {
+  public void debug(Throwable pThrowable, boolean pNoStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( String pMessage, Throwable pThrowable ) {
+  public void debug(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, String... pMessageParameters ) {
+  public void debug(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, Object... pMessageParameters ) {
+  public void debug(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void debug(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void debug(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void debug(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void debug(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void debug(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void debug( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void debug(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -203,67 +203,67 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void info( String pMessage ) {
+  public void info(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void infoObject( Object pObject ) {
+  public void infoObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( Throwable pThrowable ) {
+  public void info(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( Throwable pThrowable, boolean pNoStacktrace ) {
+  public void info(Throwable pThrowable, boolean pNoStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( String pMessage, Throwable pThrowable ) {
+  public void info(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, String... pMessageParameters ) {
+  public void info(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, Object... pMessageParameters ) {
+  public void info(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void info(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void info(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void info(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void info(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void info(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void info( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void info(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -274,67 +274,67 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void warn( String pMessage ) {
+  public void warn(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warnObject( Object pObject ) {
+  public void warnObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( Throwable pThrowable ) {
+  public void warn(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( Throwable pThrowable, boolean pNoStacktrace ) {
+  public void warn(Throwable pThrowable, boolean pNoStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( String pMessage, Throwable pThrowable ) {
+  public void warn(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, String... pMessageParameters ) {
+  public void warn(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, Object... pMessageParameters ) {
+  public void warn(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void warn(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void warn(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void warn(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void warn(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void warn(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void warn( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void warn(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -345,67 +345,67 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void error( String pMessage ) {
+  public void error(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void errorObject( Object pObject ) {
+  public void errorObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( Throwable pThrowable ) {
+  public void error(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( Throwable pThrowable, boolean pNoStacktrace ) {
+  public void error(Throwable pThrowable, boolean pNoStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( String pMessage, Throwable pThrowable ) {
+  public void error(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, String... pMessageParameters ) {
+  public void error(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, Object... pMessageParameters ) {
+  public void error(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void error(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void error(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void error(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void error(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void error(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void error( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void error(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
@@ -416,122 +416,122 @@ public class StartupInfoTraceImpl implements Trace {
   }
 
   @Override
-  public void fatal( String pMessage ) {
+  public void fatal(String pMessage) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatalObject( Object pObject ) {
+  public void fatalObject(Object pObject) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( Throwable pThrowable ) {
+  public void fatal(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( Throwable pThrowable, boolean pNoStacktrace ) {
+  public void fatal(Throwable pThrowable, boolean pNoStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( String pMessage, Throwable pThrowable ) {
+  public void fatal(String pMessage, Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, String... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, Object... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void fatal( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void fatal(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( Throwable pThrowable ) {
+  public void write(Throwable pThrowable) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( Throwable pThrowable, boolean pSuppressStacktrace ) {
+  public void write(Throwable pThrowable, boolean pSuppressStacktrace) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, String... pMessageParameters ) {
+  public void write(MessageID pMessageID, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, Object... pMessageParameters ) {
+  public void write(MessageID pMessageID, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, Throwable pThrowable, String... pMessageParameters ) {
+  public void write(MessageID pMessageID, Throwable pThrowable, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters ) {
+  public void write(MessageID pMessageID, Throwable pThrowable, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters ) {
+  public void write(MessageID pMessageID, ApplicationException pApplicationException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters ) {
+  public void write(MessageID pMessageID, ApplicationException pApplicationException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, SystemException pSystemException, String... pMessageParameters ) {
+  public void write(MessageID pMessageID, SystemException pSystemException, String... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public void write( MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters ) {
+  public void write(MessageID pMessageID, SystemException pSystemException, Object... pMessageParameters) {
     fail("Method must not be called by StartupInfoWriter.");
   }
 
   @Override
-  public boolean isLevelEnabled( TraceLevel pTraceLevel ) {
+  public boolean isLevelEnabled(TraceLevel pTraceLevel) {
     fail("Method must not be called by StartupInfoWriter.");
     return false;
   }
