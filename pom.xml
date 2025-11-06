@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-module-project-parent</artifactId>
+		<version>1.9.0</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.tools</groupId>
+	<artifactId>jeaf-tools-api-project</artifactId>
+	<version>1.8.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>JEAF Tools API Project</name>
+	<description>Similar to JEAF X-Fun also JEAF Tools defines a set of interface for tools that can be used as a basis for enterprise class software development projects.</description>
+	<url>https://www.anaptecs.de/jeaf</url>
+
+	<scm>
+		<connection>scm:git:https://bitbucket.org/anaptecs/jeaf-tools-api.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/anaptecs/jeaf-tools-api.git</developerConnection>
+		<url>https://bitbucket.org/anaptecs/jeaf-tools-api</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<properties>
+		<jeaf.x-fun.api.version>1.8.0</jeaf.x-fun.api.version>
+		<jeaf.x-fun.test-runtime.version>1.8.0</jeaf.x-fun.test-runtime.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.platform</groupId>
+			<artifactId>junit-platform-suite-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<modules>
+		<module>jeaf-tools-api-loader</module>
+		<module>jeaf-auto-boxing-tools-api</module>
+		<module>jeaf-cache-tools-api</module>
+		<module>jeaf-collection-tools-api</module>
+		<module>jeaf-date-tools-api</module>
+		<module>jeaf-encoding-tools-api</module>
+		<module>jeaf-encryption-tools-api</module>
+		<module>jeaf-file-tools-api</module>
+		<module>jeaf-locale-tools-api</module>
+		<module>jeaf-monitoring-tools-api</module>
+		<module>jeaf-networking-tools-api</module>
+		<module>jeaf-performance-tools-api</module>
+		<module>jeaf-pooling-tools-api</module>
+		<module>jeaf-reflection-tools-api</module>
+		<module>jeaf-regexp-tools-api</module>
+		<module>jeaf-serialization-tools-api</module>
+		<module>jeaf-ssl-tools-api</module>
+		<module>jeaf-stream-tools-api</module>
+		<module>jeaf-string-tools-api</module>
+		<module>jeaf-validation-tools-api</module>		
+		<module>jeaf-web-tools-api</module>
+		<module>jeaf-xml-tools-api</module>
+		<module>jeaf-tools-api</module>
+	</modules>
+
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.anaptecs.jeaf.tools</groupId>
+		<artifactId>jeaf-tools-api-project</artifactId>
+		<version>1.8.1-SNAPSHOT</version>
+	</parent>
+
+	<name>JEAF Cache Tools API</name>
+	<artifactId>jeaf-cache-tools-api</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-tools-api-loader</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.x-fun</groupId>
+			<artifactId>jeaf-x-fun-test-runtime</artifactId>
+			<version>${jeaf.x-fun.test-runtime.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+</project>

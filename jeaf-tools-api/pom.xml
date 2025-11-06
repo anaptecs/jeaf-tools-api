@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.anaptecs.jeaf.tools</groupId>
+		<artifactId>jeaf-tools-api-project</artifactId>
+		<version>1.8.1-SNAPSHOT</version>
+	</parent>
+
+	<name>JEAF Tools API</name>
+	<artifactId>jeaf-tools-api</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-tools-api-loader</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-auto-boxing-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-cache-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-date-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-encoding-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-collection-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-encryption-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-file-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-locale-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-monitoring-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-networking-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-performance-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-pooling-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-reflection-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-regexp-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-serialization-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-ssl-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-stream-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-string-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-validation-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-web-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.tools</groupId>
+			<artifactId>jeaf-xml-tools-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.x-fun</groupId>
+			<artifactId>jeaf-x-fun-test-runtime</artifactId>
+			<version>${jeaf.x-fun.test-runtime.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+</project>
