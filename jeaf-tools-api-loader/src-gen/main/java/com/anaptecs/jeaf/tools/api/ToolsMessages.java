@@ -249,42 +249,42 @@ public final class ToolsMessages {
   public static final MessageID SSL_WARNING;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNABLE_TO_VERIFY_SIGNATURE;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNABLE_TO_GENERATE_KEY_PAIR;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNABLE_TO_GENERATE_KEY_FROM_BYTES;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode RSA_MAX_MESSAGE_SIZE_EXCEEDED;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNABLE_TO_CREATE_AES_SECRET_KEY;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNABLE_TO_SIGN_MESSAGE;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode INVALID_TOKEN_LENGTH;
 
   /**
-   * 
+   *
    */
   public static final ErrorCode UNSUPPORTED_ALGORITHM;
 
