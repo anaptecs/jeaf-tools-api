@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.anaptecs.jeaf</groupId>
 		<artifactId>jeaf-module-project-parent</artifactId>
-		<version>1.9.0</version>
+		<version>1.9.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.anaptecs.jeaf.tools</groupId>
@@ -24,9 +24,16 @@
 		<tag>HEAD</tag>
 	</scm>
 	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/anaptecs/jeaf-tools-api</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<properties>
-		<jeaf.x-fun.api.version>1.8.0</jeaf.x-fun.api.version>
-		<jeaf.x-fun.test-runtime.version>1.8.0</jeaf.x-fun.test-runtime.version>
+		<jeaf.x-fun.api.version>1.8.1-SNAPSHOT</jeaf.x-fun.api.version>
+		<jeaf.x-fun.test-runtime.version>1.8.1-SNAPSHOT</jeaf.x-fun.test-runtime.version>
 	</properties>
 
 	<dependencies>
